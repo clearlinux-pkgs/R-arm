@@ -4,7 +4,7 @@
 #
 Name     : R-arm
 Version  : 1.9.3
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/arm_1.9-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.9-3.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
