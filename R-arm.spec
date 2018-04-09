@@ -4,7 +4,7 @@
 #
 Name     : R-arm
 Version  : 1.9.3
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/arm_1.9-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.9-3.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
@@ -14,12 +14,10 @@ Requires: R-Matching
 Requires: R-abind
 Requires: R-coda
 Requires: R-lme4
-Requires: R-survey
 BuildRequires : R-Matching
 BuildRequires : R-abind
 BuildRequires : R-coda
 BuildRequires : R-lme4
-BuildRequires : R-survey
 BuildRequires : clr-R-helpers
 
 %description
@@ -33,11 +31,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521204833
+export SOURCE_DATE_EPOCH=1523288516
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521204833
+export SOURCE_DATE_EPOCH=1523288516
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
