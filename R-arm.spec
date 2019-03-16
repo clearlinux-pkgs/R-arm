@@ -4,7 +4,7 @@
 #
 Name     : R-arm
 Version  : 1.10.1
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
@@ -20,7 +20,7 @@ BuildRequires : R-abind
 BuildRequires : R-coda
 BuildRequires : R-lme4
 BuildRequires : R-survey
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 # arm
@@ -34,11 +34,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523729177
+export SOURCE_DATE_EPOCH=1552711907
 
 %install
+export SOURCE_DATE_EPOCH=1552711907
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523729177
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -73,8 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library arm|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  arm || :
 
 
 %files
