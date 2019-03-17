@@ -4,17 +4,12 @@
 #
 Name     : R-arm
 Version  : 1.10.1
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-Matching
-Requires: R-abind
-Requires: R-coda
-Requires: R-lme4
-Requires: R-survey
 BuildRequires : R-Matching
 BuildRequires : R-abind
 BuildRequires : R-coda
@@ -34,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552711907
+export SOURCE_DATE_EPOCH=1552831562
 
 %install
-export SOURCE_DATE_EPOCH=1552711907
+export SOURCE_DATE_EPOCH=1552831562
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
