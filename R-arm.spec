@@ -4,7 +4,7 @@
 #
 Name     : R-arm
 Version  : 1.10.1
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
