@@ -4,18 +4,20 @@
 #
 Name     : R-arm
 Version  : 1.10.1
-Release  : 29
+Release  : 30
 URL      : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.10-1.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
 Group    : Development/Tools
 License  : GPL-3.0
+Requires: R-Matching
+Requires: R-abind
+Requires: R-coda
+Requires: R-lme4
 BuildRequires : R-Matching
 BuildRequires : R-abind
 BuildRequires : R-coda
 BuildRequires : R-lme4
-BuildRequires : R-nloptr
-BuildRequires : R-survey
 BuildRequires : buildreq-R
 
 %description
@@ -29,13 +31,13 @@ ARM: Data Analysis Using Regression and Multilevel/Hierarchical Models
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1556482377
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1569348591
 
 %install
-export SOURCE_DATE_EPOCH=1556482377
+export SOURCE_DATE_EPOCH=1569348591
 rm -rf %{buildroot}
-export LANG=C
+export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -64,7 +66,7 @@ R CMD INSTALL --preclean --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} 
 cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
