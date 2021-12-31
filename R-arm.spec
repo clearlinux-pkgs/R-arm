@@ -4,7 +4,7 @@
 #
 Name     : R-arm
 Version  : 1.12.2
-Release  : 50
+Release  : 51
 URL      : https://cran.r-project.org/src/contrib/arm_1.12-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.12-2.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
@@ -31,10 +31,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1640888737
+export SOURCE_DATE_EPOCH=1640971114
 
 %install
-export SOURCE_DATE_EPOCH=1640888737
+export SOURCE_DATE_EPOCH=1640971114
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
