@@ -7,7 +7,7 @@
 #
 Name     : R-arm
 Version  : 1.14.4
-Release  : 63
+Release  : 64
 URL      : https://cran.r-project.org/src/contrib/arm_1.14-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/arm_1.14-4.tar.gz
 Summary  : Data Analysis Using Regression and Multilevel/Hierarchical
